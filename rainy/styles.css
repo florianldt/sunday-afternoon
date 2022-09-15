@@ -1,0 +1,147 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#canvas {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #7da7d9;
+}
+
+#fps {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.sky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.sky__top {
+    height: 32px;
+    background-color: #1665ae;
+}
+
+#sky-dots {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    left: 0;
+}
+
+#sky-lower-dots {
+    position: absolute;
+    top: 62px;
+    right: 0;
+    left: 0;
+}
+
+.sky__dot {
+    position: absolute;
+    top: 0px;
+    width: 8px;
+    height: 4px;
+}
+
+.sky__dot-px {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #1665ae;
+}
+
+.sky__lower-dot {
+    position: absolute;
+    top: 0px;
+    width: 28px;
+    height: 12px;
+}
+
+.sky__lower-dot-px {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #1665ae;
+}
+
+.sky__lower-dot-px:nth-child(1) {
+    top: 0;
+    left: 12px;
+}
+
+.sky__lower-dot-px:nth-child(2) {
+    top: 8px;
+    left: 4px;
+}
+
+.sky__lower-dot-px:nth-child(3) {
+    top: 8px;
+    left: 20px;
+}
+
+.sky__line {
+    background-color: #458ccc;
+}
+
+.sky__line:nth-child(1) {
+    height: 80px;
+}
+
+.sky__line:nth-child(2) {
+    height: 8px;
+    margin-top: 4px;
+}
+
+.sky__line:nth-child(3) {
+    height: 16px;
+    margin-top: 8px;
+}
+
+.sky__line:nth-child(4) {
+    height: 32px;
+    margin-top: 16px;
+}
+
+#drops {
+    position: fixed;
+    top: 32px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0.4;
+}
+
+.drop {
+    position: absolute;
+}
+
+.drop__head {
+    position: absolute;
+    display: block;
+    width: 3px;
+    height: 3px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.drop__tail {
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    width: 3px;
+    height: 74px;
+    background-color: #fff;
+}
